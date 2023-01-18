@@ -13,15 +13,6 @@ int main(){
         return -1;
     }
 
-    int c=0;
-
-    while (!feof(archivo)){
-        c++;
-        fgets(buffer,100,archivo);
-        printf("la línea %d es: %s",c,buffer);
-    }
-    
-    /*
     fgets(buffer,100,archivo);
     printf("la primera línea es %s",buffer);
 
@@ -37,7 +28,7 @@ int main(){
     fprintf(archivo,"\n");
 
     fputs("se agrega una quinta línea",archivo);
-  */
+ 
 
     fclose(archivo);
 
