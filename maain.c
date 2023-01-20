@@ -17,38 +17,18 @@ int main(){
         printf("No se puede abrir el archivo");
         return -1;
     }
-/*
-    for(int i=0; i<100; i+=3){
-        int n;
-        
-        fgets(buffer,100,archivo);
-        if (buffer==5)
-        {
-            fputs(buffer, " Es multiplo de 5");
-        }
-        
     
-    }
-*/
+
 while (!feof(archivo)){
     fscanf(archivo, "%d", &pi);
     if (pi%5==0)
     {
-          fprintf(archivo2,"%d Es multiplo de 5 \n", pi);
+          fprintf(archivo2,"%d Este es un multiplo de 5 \n", pi);
     }else{
         fprintf(archivo2,"%d \n", pi);
     }
 
 
-/*
-    printf("el número en la cuarta línea es %lf",pi);
-    fscanf(buffer, 100, archivo);
-    alt=linea%5;
-    if (alt==5)
-    {
-          fputs(buffer, " Es multiplo de 5");
-    }
-*/
 
 pi++;
 }
